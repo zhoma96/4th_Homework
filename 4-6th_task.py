@@ -9,9 +9,9 @@ for num in count(int(input('1st number: '))):
 
 print('Copying your elements and printing, for quiting type "q"')
 my_list = input('Input element with space: ').split()
-iter_ = cycle(my_list)
+num = cycle(my_list)
 quit = None
 
 while quit != 'q':
-    print(next(iter_), end='')
+    print(next(num), end='')
     quit = input()
