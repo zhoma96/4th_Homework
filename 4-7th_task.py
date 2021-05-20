@@ -1,14 +1,12 @@
-from itertools import count
 from math import factorial
 
-def fact_gen(number):
+def factorial_number(n):
     f_num = 1
-    if number == 0:
-        yield f'{number}! = 1'
-    for i in range(1, number + 1):
+    if n == 0:
+        yield f'{n}! = 1'
+    for i in range(1, n + 1):
         f_num *= i
-        yield f'{i}! = {f_num}'
+        print(f'{i}! = {f_num}')
 
-for el in fact_gen(int(input('Factorial number: '))):
+for el in factorial_number(int(input('Factorial number: '))):
     print(el)
-
